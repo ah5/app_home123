@@ -1,6 +1,6 @@
 allprojects {
 	task hello << { task ->
-		println "I'm $task.project.name"
+		println "I'm the main project - $task.project.name"
 	}	
 }
 subprojects {
