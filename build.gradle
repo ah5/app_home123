@@ -1,5 +1,23 @@
 allprojects {
 	task hello << { task ->
 		println "I'm $task.project.name"
+	}	
+}
+subprojects {
+	hello {
+		doLast {
+			println "- I depend on home123"
+		}
+		afterEvaluate { Project project ->
+			if (project.buildtype != null) {
+				if (project.buildtype == "jar") { 
+					doLast { println "- Building for " + project.buildtype + " type" }
+				} else {
+					doLast { println "- Unrecognized buildtype " + project.buildtype }
+				}
+			} else {
+				println "- Build type not found"
+			}
+		}
 	}
 }

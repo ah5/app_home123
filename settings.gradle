@@ -1,5 +1,4 @@
 include 'apps/core',
 	'apps/mobile/android',
-	'apps/mobile/ios',
 	'apps/staticweb',
 	'apps/web'
