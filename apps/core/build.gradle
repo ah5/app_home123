@@ -1,1 +1,3 @@
+apply plugin: 'java'
+
 ext.buildtype="jar"
