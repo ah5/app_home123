@@ -1,5 +1,9 @@
 # home123
 
+groupId com.highbrow.apps
+artifactId home123
+version 1.0-SNAPSHOT
+
 App Structure
 ourapp
 web - Meteor application 1
